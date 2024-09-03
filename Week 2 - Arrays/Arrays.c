@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -12,7 +11,7 @@ int main(void) {
         numberStorage[i] = numberStorage[i - 1] * 2;
     }
 
-    string phrase = get_string("Enter a phrase now: ");
+    char *phrase = get_string("Enter a phrase now: ");
 
     for (int i = 0, length = strlen(phrase); i < length; i ++) {
         printf("%c", phrase[i]);
